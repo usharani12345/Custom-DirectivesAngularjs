@@ -1,11 +1,5 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-Hello......................
-</body><!DOCTYPE html>
+
 <html ng-app="myApp">
 <head>
 	<title></title>
@@ -19,29 +13,19 @@ Hello......................
 </head>
 <body>
 <div class="container" ng-controller="myController" ng-cloak>
-<h1>{{message}}</h1>
-<h2>{{message}}</h2>
 
-<h2>{{message}}</h2>
+<div ng-repeat="employee in employeeData">
+	<my-first-directive
+		header-name="{{header}}" 
+		employee-details= "employee"
+		change-employee-name ="changeEmployeeName()" 
+		>
+	</my-first-directive>
 
-<div>
-	<div >
-	<h3>Element Level Directive</h3>
-	<my-first-directive></my-first-directive>
-	</div>
-	<div my-first-directive>
-	<h3>Attribute Level Directive</h3>
-	</div>
-	
-	<div class="my-first-directive">
-		<h3>Class Level Directive</h3>
-	</div>
-	<div >
-	<!-- directive: my-first-directive -->
 	</div>
 </div>
 
 </div>
 </body>
-</html>
+
 </html>

@@ -11,23 +11,12 @@
 
 </head>
 <body>
-<div class="container" ng-controller="myController" ng-cloak>
-<h1>{{message}}</h1>
-<div>
-	<div >
-	<h3>Element Level Directive</h3>
+<div class="container"  ng-cloak>
+
+<div ng-controller="myController">
+{{header}}
 	<my-first-directive></my-first-directive>
-	</div>
-	<div my-first-directive>
-	<h3>Attribute Level Directive</h3>
-	</div>
-	
-	<div class="my-first-directive">
-		<h3>Class Level Directive</h3>
-	</div>
-	<div >
-	<!-- directive: my-first-directive -->
-	</div>
+
 </div>
 
 </div>
